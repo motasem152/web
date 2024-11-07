@@ -1,0 +1,2523 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <script src="https://cdn.disqus.com/combine/2.1.js?namespace=Disqus"></script>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Class Home</title>
+    <link
+        href='data:image/jpeg;base64,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'
+        rel='icon' type='image/x-icon' />
+    <style>
+        /* Make the page responsive */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        /* Set the maximum width of the page */
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        /* Make images responsive */
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        /* Make the layout responsive */
+        @media only screen and (max-width: 768px) {
+
+            /* For tablets and smaller screens */
+            .container {
+                margin: 20px auto;
+                padding: 10px;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+
+            /* For mobile phones and smaller screens */
+            .container {
+                margin: 10px auto;
+                padding: 5px;
+            }
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #6b2dce44;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+
+        #dhaker-maana table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        #dhaker-maana th,
+        #dhaker-maana td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        #dhaker-maana th {
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+
+        #dhaker-maana td {
+            text-align: center;
+        }
+
+
+        header {
+            background-color: #00a2ff;
+            color: #333;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 10;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+        }
+
+
+        .header-left {
+            display: flex;
+            align-items: center;
+        }
+
+        .header-left img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-left: 10px;
+            cursor: pointer;
+            display: none;
+        }
+
+        .profile-info-popup {
+            display: none;
+            position: absolute;
+            top: 60px;
+            /* Adjust based on image position */
+            right: 70px;
+            /* Adjust based on image position */
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            z-index: 15;
+            width: 200px;
+            text-align: left;
+        }
+
+        .profile-info-popup h3 {
+            margin-top: 0;
+        }
+
+        .profile-info-popup button {
+            background-color: #1fcbe2;
+            border: none;
+            color: #fff;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .profile-info-popup button:hover {
+            background-color: #f17a0b;
+        }
+
+        nav button,
+        .get-started-btn {
+            background-color: #ff00bf;
+            border: none;
+            color: #fff;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        nav button:hover,
+        .get-started-btn:hover {
+            background-color: #0056b3;
+        }
+
+        #main-content {
+            padding: 20px;
+            margin-top: 60px;
+            flex: 1;
+            overflow: auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page {
+            display: none;
+        }
+
+        .page h1,
+        .page h2 {
+            color: #11a736;
+            margin-top: 40px;
+        }
+
+        .page ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .page ul li {
+            margin: 10px 0;
+        }
+
+        .page ul li a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+
+        .page ul li a:hover {
+            text-decoration: underline;
+        }
+
+        #left-image {
+            position: fixed;
+            top: 120px;
+            /* Adjust vertical position */
+            right: 10px;
+            /* Adjust horizontal position */
+            width: 250px;
+            /* Adjust width as needed */
+            height: 200px;
+            /* Adjust height as needed */
+            border-radius: 50%;
+            /* Make the image circular */
+            object-fit: cover;
+            /* Ensure the image covers the circle */
+            z-index: 5;
+
+        }
+
+        #middle-image {
+            position: fixed;
+            top: 300px;
+            /* Adjust vertical position */
+            right: 10px;
+            /* Adjust horizontal position */
+            width: 10x;
+            /* Adjust width as needed */
+            height: 200px;
+            /* Adjust height as needed */
+            border-radius: 70%;
+            /* Make the image circular */
+            object-fit: cover;
+            /* Ensure the image covers the circle */
+            z-index: 5;
+
+        }
+
+
+        footer {
+            background-color: #ffffff;
+            color: #ac2424;
+            padding: 10px 0;
+            text-align: center;
+            z-index: 10;
+        }
+
+        .courses-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .course-category {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .course-category h3 {
+            margin-top: 0;
+            color: #007BFF;
+        }
+
+        .course-category ul {
+            padding: 0;
+            list-style-type: none;
+            margin: 0;
+        }
+
+        .course-category ul li {
+            margin: 10px 0;
+        }
+
+        .course-category ul li a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+
+        .course-category ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .registration-form {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .registration-form h2 {
+            color: #007BFF;
+        }
+
+        .registration-form .form-group {
+            margin-bottom: 15px;
+        }
+
+        .registration-form .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .registration-form .form-group input[type="text"],
+        .registration-form .form-group input[type="email"],
+        .registration-form .form-group input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .registration-form .form-group input[type="file"] {
+            display: none;
+        }
+
+        .registration-form .form-group .custom-file-upload {
+            display: inline-block;
+            padding: 10px 20px;
+            cursor: pointer;
+            background-color: #007BFF;
+            color: #fff;
+            border-radius: 4px;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .registration-form .form-group .custom-file-upload:hover {
+            background-color: #0056b3;
+        }
+
+        .registration-form .form-group button,
+        .logout-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            border: none;
+            color: #fff;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .registration-form .form-group button:hover,
+        .logout-btn:hover {
+            background-color: #0056b3;
+        }
+
+        .registration-form .message {
+            margin-top: 15px;
+        }
+
+        .profile-picture {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            display: block;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div><button id="send-hw">Send your H.W</button>
+
+            <form id="hw-form" style="display: none;">
+                <label for="name">الاسم:</label>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="age">العمر:</label>
+                <input type="number" id="age" name="age"><br><br>
+                <label for="grade">الصف:</label>
+                <input type="text" id="grade" name="grade"><br><br>
+                <label for="device">الجهاز:</label>
+                <select id="device" name="device">
+                    <option value="pc">PC</option>
+                    <option value="laptop">Laptop</option>
+                    <option value="mobile">Mobile</option>
+                </select><br><br>
+                <label for="image">الصورة:</label>
+                <input type="file" id="image" name="image"><br><br>
+                <button id="submit-btn">ارسل</button>
+            </form>
+
+            <script>
+                const sendBtn = document.getElementById('send-hw');
+                const form = document.getElementById('hw-form');
+                const submitBtn = document.getElementById('submit-btn');
+                let formVisible = false;
+
+                sendBtn.addEventListener('click', () => {
+                    if (!formVisible) {
+                        form.style.display = 'block';
+                        formVisible = true;
+                    } else {
+                        form.style.display = 'none';
+                        formVisible = false;
+                    }
+                });
+
+                submitBtn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const name = document.getElementById('name').value;
+                    const age = document.getElementById('age').value;
+                    const grade = document.getElementById('grade').value;
+                    const device = document.getElementById('device').value;
+                    const image = document.getElementById('image').files[0];
+
+                    // إرسال البيانات إلى رقم الواتساب
+                    const whatsappUrl = `https://wa.me/01092201077?text=الاسم: ${name}, العمر: ${age}, الصف: ${grade}, الجهاز: ${device}`;
+                    window.open(whatsappUrl, '_blank');
+
+                    // إرسال الصورة إلى رقم الواتساب
+                    const formData = new FormData();
+                    formData.append('image', image);
+                    fetch(`https://wa.me/0109221077`, {
+                        method: 'POST',
+                        body: formData,
+                    })
+                        .then((response) => response.json())
+                        .then((data) => console.log(data))
+                        .catch((error) => console.error(error));
+                });
+            </script>
+        </div>
+        <div><button id="simulate-btn">About the Web</button>
+
+            <style>
+                /* Add this CSS to define the animation */
+                @keyframes circular-motion {
+                    0% {
+                        transform: rotate(0deg);
+                    }
+
+                    100% {
+                        transform: rotate(360deg);
+                    }
+                }
+
+                /* Add this CSS to define the beam of light effect */
+                .beam-of-light {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 0;
+                    background-color: #ffffff;
+                    opacity: 0;
+                    transition: opacity 0.5s, height 0.5s;
+                }
+
+                .beam-of-light.show {
+                    opacity: 1;
+                    height: 100vh;
+                }
+
+                /* Add this CSS to define the moving square */
+                .moving-square {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 50px;
+                    height: 50px;
+                    background-color: #ff0000;
+                    border-radius: 10px;
+                }
+
+                .moving-square .leg {
+                    position: absolute;
+                    bottom: -50px;
+                    width: 10px;
+                    height: 50px;
+                    background-color: #000000;
+                    border-radius: 10px;
+                    transform-origin: top;
+                    animation: walk 1s infinite;
+                }
+
+                .moving-square .leg.left {
+                    left: 15px;
+                }
+
+                .moving-square .leg.right {
+                    right: 15px;
+                }
+
+                .moving-square .foot {
+                    position: absolute;
+                    bottom: 0;
+                    width: 10px;
+                    height: 10px;
+                    background-color: #000000;
+                    border-radius: 50%;
+                }
+
+                .moving-square .face {
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                    width: 30px;
+                    height: 30px;
+                    background-color: #ffffff;
+                    border-radius: 50%;
+                }
+
+                .moving-square .face .eye {
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                    width: 5px;
+                    height: 5px;
+                    background-color: #000000;
+                    border-radius: 50%;
+                }
+
+                .moving-square .face .mouth {
+                    position: absolute;
+                    top: 20px;
+                    left: 10px;
+                    width: 10px;
+                    height: 5px;
+                    background-color: #000000;
+                    border-radius: 50%;
+                }
+
+                .moving-square .hand {
+                    position: absolute;
+                    top: 10px;
+                    width: 10px;
+                    height: 20px;
+                    background-color: #000000;
+                    border-radius: 10px;
+                }
+
+                .moving-square .hand.left {
+                    left: 15px;
+                    transform: rotate(-45deg);
+                    top: 25px;
+                }
+
+                .moving-square .hand.right {
+                    right: 15px;
+                    transform: rotate(45deg);
+                    top: 25px;
+                }
+
+                .moving-square .text {
+                    position: absolute;
+                    top: 50px;
+                    left: 50px;
+                    font-size: 24px;
+                    font-weight: bold;
+                    color: #000000;
+                }
+
+                @keyframes walk {
+                    0% {
+                        transform: rotate(0deg);
+                    }
+
+                    50% {
+                        transform: rotate(30deg);
+                    }
+
+                    100% {
+                        transform: rotate(0deg);
+                    }
+                }
+
+                @keyframes move-around {
+                    0% {
+                        top: 0;
+                        left: 0;
+                    }
+
+                    25% {
+                        top: 0;
+                        left: 100%;
+                    }
+
+                    50% {
+                        top: 100%;
+                        left: 100%;
+                    }
+
+                    75% {
+                        top: 100%;
+                        left: 0;
+                    }
+
+                    100% {
+                        top: 0;
+                        left: 0;
+                    }
+                }
+
+                @keyframes jump {
+                    0% {
+                        transform: translateY(0);
+                    }
+
+                    50% {
+                        transform: translateY(-20px);
+                    }
+
+                    100% {
+                        transform: translateY(0);
+                    }
+                }
+            </style>
+
+            <script>
+                const simulateBtn = document.getElementById('simulate-btn');
+                const elements = document.querySelectorAll('*');
+                const buttons = document.querySelectorAll('button');
+
+                simulateBtn.addEventListener('click', () => {
+                    // Add the animation to all elements on the page
+                    elements.forEach((element) => {
+                        element.style.animation = 'circular-motion 2s linear infinite';
+                    });
+
+                    // Remove the animation after 5 seconds
+                    setTimeout(() => {
+                        elements.forEach((element) => {
+                            element.style.animation = '';
+                        });
+
+                        // Create a beam of light effect
+                        const beamOfLight = document.createElement('div');
+                        beamOfLight.className = 'beam-of-light';
+                        document.body.appendChild(beamOfLight);
+
+                        // Show the beam of light for 0.5 seconds
+                        beamOfLight.classList.add('show');
+                        setTimeout(() => {
+                            beamOfLight.classList.remove('show');
+                            beamOfLight.remove();
+                        }, 500);
+
+                        // Create a moving square
+                        const movingSquare = document.createElement('div');
+                        movingSquare.className = 'moving-square';
+                        document.body.appendChild(movingSquare);
+
+                        // Add two legs to the moving square
+                        const legLeft = document.createElement('div');
+                        legLeft.className = 'leg left';
+                        movingSquare.appendChild(legLeft);
+
+                        const legRight = document.createElement('div');
+                        legRight.className = 'leg right';
+                        movingSquare.appendChild(legRight);
+
+                        // Add feet to the legs
+                        const footLeft = document.createElement('div');
+                        footLeft.className = 'foot';
+                        legLeft.appendChild(footLeft);
+
+                        const footRight = document.createElement('div');
+                        footRight.className = 'foot';
+                        legRight.appendChild(footRight);
+
+                        // Add a face to the moving square
+                        const face = document.createElement('div');
+                        face.className = 'face';
+                        movingSquare.appendChild(face);
+
+                        // Add eyes and mouth to the face
+                        const eye1 = document.createElement('div');
+                        eye1.className = 'eye';
+                        face.appendChild(eye1);
+
+                        const eye2 = document.createElement('div');
+                        eye2.className = 'eye';
+                        eye2.style.left = '20px';
+                        face.appendChild(eye2);
+
+                        const mouth = document.createElement('div');
+                        mouth.className = 'mouth';
+                        face.appendChild(mouth);
+
+                        // Add hands to the moving square
+                        const handLeft = document.createElement('div');
+                        handLeft.className = 'hand left';
+                        movingSquare.appendChild(handLeft);
+
+                        const handRight = document.createElement('div');
+                        handRight.className = 'hand right';
+                        movingSquare.appendChild(handRight);
+
+                        // Add text to the moving square
+                        const text = document.createElement('div');
+                        text.className = 'text';
+                        text.textContent = 'COMPUTER CENTER our phone: 01096524556 email : computercenter604@gmail.com';
+                        movingSquare.appendChild(text);
+
+                        // Make the moving square move around the page
+                        let x = 0;
+                        let y = 0;
+                        let speedX = 2;
+                        let speedY = 2;
+
+                        function moveSquare() {
+                            x += speedX;
+                            y += speedY;
+
+                            if (x + movingSquare.offsetWidth > window.innerWidth || x < 0) {
+                                speedX = -speedX;
+                            }
+
+                            if (y + movingSquare.offsetHeight > window.innerHeight || y < 0) {
+                                speedY = -speedY;
+                            }
+
+                            movingSquare.style.top = `${y}px`;
+                            movingSquare.style.left = `${x}px`;
+
+                            // Make the legs move
+                            legLeft.style.transform = `rotate(${Math.sin(x / 10) * 30}deg)`;
+                            legRight.style.transform = `rotate(${Math.sin(x / 10) * 30}deg)`;
+
+                            // Make the hands move
+                            handLeft.style.transform = `rotate(${Math.sin(x / 10) * 10}deg)`;
+                            handRight.style.transform = `rotate(${Math.sin(x / 10) * 10}deg)`;
+
+                            requestAnimationFrame(moveSquare);
+                        }
+
+                        moveSquare();
+
+                        // Remove the square after 20 seconds
+                        setTimeout(() => {
+                            movingSquare.remove();
+                        }, 20000);
+                    }, 5000);
+                });
+            </script>
+        </div>
+        <div class="header-left">
+            <img id="profile-img" class="profile-picture" alt="Profile Picture">
+            <div id="profile-info" class="profile-info-popup">
+                <h3>Profile Information</h3>
+                <p><strong>Username:</strong> <span id="profile-username"></span></p>
+                <p><strong>Email:</strong> <span id="profile-email"></span></p>
+                <button onclick="hideProfileInfo()">Close</button>
+            </div>
+            <nav>
+                <button onclick="showPage('home')">Home</button>
+                <button onclick="showPage('Math classes')">Math Classes</button>
+                <button onclick="showPage('كورسات')">كورسات</button>
+                <button onclick="showPage('registration')">Register</button>
+                <button onclick="showPage('comment')">comment</button>
+                <button onclick="showPage('اشترك')">اشترك</button>
+                <button onclick="showPage('ذاكر معانا')">ذاكر معانا</button>
+                <button onclick="showPage('Game')">Game</button>
+
+            </nav>
+        </div>
+    </header>
+    <main id="main-content">
+        <div id="home" class="page">
+            <h1>Welcome to the Math Class Home</h1>
+            <p>Explore our educational resources and improve your math skills.</p>
+            <p>We offer a lot of courses and math lessons,through classes you will find the lesson's links.</p>
+            <!DOCTYPE html>
+            <html lang="en">
+
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>مسطرة متحركة وقابلة للكتابة</title>
+                <style>
+                    /* CSS */
+
+                    body {
+                        margin: 0;
+                        font-family: Arial, sans-serif;
+                        background-color: #f0f0f0;
+                        overflow: hidden;
+                    }
+
+                    .ruler {
+                        position: absolute;
+                        width: 100%;
+                        max-width: 600px;
+                        height: 50px;
+                        border: 1px solid #333;
+                        background-color: #fff;
+                        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+                        cursor: move;
+                    }
+
+                    .ruler .tick {
+                        position: absolute;
+                        height: 100%;
+                        border-left: 1px solid #333;
+                        background-color: #eee;
+                    }
+
+                    .ruler .tick-label {
+                        position: absolute;
+                        top: 0;
+                        font-size: 12px;
+                        color: #333;
+                        transform: translateY(-100%);
+                    }
+
+                    .ruler .tick:nth-child(10n) {
+                        height: 50%;
+                        border-left: 2px solid #333;
+                    }
+
+                    .ruler .tick:nth-child(50n) {
+                        height: 100%;
+                        border-left: 2px solid #333;
+                    }
+
+                    .ruler .tick:nth-child(100n) {
+                        height: 150%;
+                        border-left: 3px solid #333;
+                    }
+
+                    .ruler textarea {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        border: none;
+                        background: transparent;
+                        resize: none;
+                        font-size: 14px;
+                        color: #333;
+                        padding: 10px;
+                        box-sizing: border-box;
+                        pointer-events: none;
+                        overflow: hidden;
+                    }
+                </style>
+            </head>
+
+            <body>
+
+
+                <script>
+
+                </script>
+            </body>
+
+            </html>
+
+            <!DOCTYPE html>
+            <html lang="en">
+
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>آلة حاسبة</title>
+                <style>
+                    .calculator {
+                        display: none;
+                        border: 1px solid #ffffff;
+                        border-radius: 5px;
+                        box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+                        background-color: #ffffff;
+                        padding: 10px;
+                        width: 180px;
+                    }
+
+                    .display {
+                        border: 1px solid #ccc;
+                        border-radius: 5px;
+                        padding: 10px;
+                        font-size: 1.2em;
+                        text-align: right;
+                        margin-bottom: 10px;
+                        background-color: #dad9df;
+                    }
+
+                    .buttons {
+                        display: grid;
+                        grid-template-columns: repeat(4, 1fr);
+                        gap: 5px;
+                    }
+
+                    .btn {
+                        background-color: #145ca0;
+                        border: 1px solid #d8a3d5;
+                        border-radius: 5px;
+                        padding: 10px;
+                        font-size: 1.1em;
+                        cursor: pointer;
+                        transition: background-color 0.3s;
+                    }
+
+                    .btn:hover {
+                        background-color: #ec9513;
+                    }
+
+                    .btn:active {
+                        background-color: #e0e0e0;
+                    }
+
+                    #toggle-button {
+                        padding: 10px 20px;
+                        font-size: 1em;
+                        cursor: pointer;
+                        background-color: #007bff;
+                        color: rgb(126, 27, 27);
+                        border: none;
+                        border-radius: 5px;
+                        margin-bottom: 10px;
+                    }
+
+                    #toggle-button:hover {
+                        background-color: #0056b3;
+                    }
+                </style>
+            </head>
+
+            <body>
+                <button id="toggle-button">إظهار الآلة الحاسبة</button>
+                <div class="calculator" id="calculator">
+                    <div class="display" id="display">0</div>
+                    <div class="buttons">
+                        <button class="btn" onclick="clearDisplay()">C</button>
+                        <button class="btn" onclick="appendToDisplay('7')">7</button>
+                        <button class="btn" onclick="appendToDisplay('8')">8</button>
+                        <button class="btn" onclick="appendToDisplay('9')">9</button>
+                        <button class="btn" onclick="appendToDisplay('/')">/</button>
+                        <button class="btn" onclick="appendToDisplay('4')">4</button>
+                        <button class="btn" onclick="appendToDisplay('5')">5</button>
+                        <button class="btn" onclick="appendToDisplay('6')">6</button>
+                        <button class="btn" onclick="appendToDisplay('*')">*</button>
+                        <button class="btn" onclick="appendToDisplay('1')">1</button>
+                        <button class="btn" onclick="appendToDisplay('2')">2</button>
+                        <button class="btn" onclick="appendToDisplay('3')">3</button>
+                        <button class="btn" onclick="appendToDisplay('-')">-</button>
+                        <button class="btn" onclick="appendToDisplay('0')">0</button>
+                        <button class="btn" onclick="appendToDisplay('.')">.</button>
+                        <button class="btn" onclick="calculate()">=</button>
+                        <button class="btn" onclick="appendToDisplay('+')">+</button>
+                    </div>
+                </div>
+                <script>
+                    // JavaScript
+                    document.getElementById('toggle-button').addEventListener('click', function () {
+                        let calculator = document.getElementById('calculator');
+                        if (calculator.style.display === 'none' || calculator.style.display === '') {
+                            calculator.style.display = 'block';
+                            this.textContent = 'إخفاء الآلة الحاسبة';
+                        } else {
+                            calculator.style.display = 'none';
+                            this.textContent = 'إظهار الآلة الحاسبة';
+                        }
+                    });
+
+                    function appendToDisplay(value) {
+                        let display = document.getElementById('display');
+                        if (display.innerText === '0') {
+                            display.innerText = value;
+                        } else {
+                            display.innerText += value;
+                        }
+                    }
+
+                    function clearDisplay() {
+                        document.getElementById('display').innerText = '0';
+                    }
+
+                    function calculate() {
+                        let display = document.getElementById('display');
+                        try {
+                            display.innerText = eval(display.innerText);
+                        } catch (error) {
+                            display.innerText = 'Error';
+                        }
+                    }
+                </script>
+            </body>
+
+            </html>
+
+
+
+            <img id="left-image"
+                src="data:image/jpeg;base64,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"
+                alt="Girl Image">
+        </div>
+
+        <div id="content" class="page">
+            <h2>Contact Information</h2>
+            <p>Phone: 01092201077</p>
+            <p>Address: Aga, Dakahlia, Egypt</p>
+        </div>
+        <div id="Game" class="page">
+            <h2>Open your mind</h2>
+            <div>
+                <!DOCTYPE html>
+                <html lang="en">
+
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Timed Math Game</title>
+                    <style>
+                        .container {
+                            text-align: center;
+                            padding: 20px;
+                            border-radius: 10px;
+                            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                            background-color: #fff;
+                        }
+
+                        button {
+                            margin-top: 10px;
+                            padding: 10px 20px;
+                            font-size: 16px;
+                            cursor: pointer;
+                        }
+
+                        #timer {
+                            font-size: 18px;
+                            margin-top: 10px;
+                            color: red;
+                        }
+                    </style>
+                </head>
+
+                <body>
+                    <div class="container">
+                        <h1>Math Game</h1>
+                        <div id="question"></div>
+                        <input type="text" id="answer" placeholder="Enter your answer">
+                        <button onclick="checkAnswer()">Submit</button>
+                        <div id="result"></div>
+                        <div id="timer"></div>
+                        <button onclick="startGame()">Start Game</button>
+                        <button onclick="joinClass()">Join a Class</button> <!-- زر الانضمام للحصة -->
+                    </div>
+                    <script>
+                        let currentAnswer = 0;
+                        let score = 0;
+                        let questionCount = 0;
+                        let totalQuestions = 5; // عدد الأسئلة
+                        let timePerQuestion = 10; // وقت لكل سؤال بالثواني
+                        let timer;
+
+                        function startGame() {
+                            score = 0;
+                            questionCount = 0;
+                            document.getElementById('result').textContent = '';
+                            document.getElementById('answer').value = '';
+                            generateQuestion();
+                        }
+
+                        function generateQuestion() {
+                            if (questionCount >= totalQuestions) {
+                                endGame();
+                                return;
+                            }
+
+                            questionCount++;
+                            const num1 = Math.floor(Math.random() * 10) + 1;
+                            const num2 = Math.floor(Math.random() * 10) + 1;
+                            const operations = ['+', '-', '*', '/', '√', 'area', 'perimeter', 'circle_area'];
+                            const operation = operations[Math.floor(Math.random() * operations.length)];
+
+                            let questionText;
+
+                            if (operation === '+') {
+                                currentAnswer = num1 + num2;
+                                questionText = `What is ${num1} + ${num2}?`;
+                            } else if (operation === '-') {
+                                currentAnswer = num1 - num2;
+                                questionText = `What is ${num1} - ${num2}?`;
+                            } else if (operation === '*') {
+                                currentAnswer = num1 * num2;
+                                questionText = `What is ${num1} * ${num2}?`;
+                            } else if (operation === '/') {
+                                currentAnswer = Math.floor(num1 / num2);
+                                questionText = `What is ${num1} / ${num2}? (Round down to the nearest integer)`;
+                            } else if (operation === '√') {
+                                currentAnswer = Math.floor(Math.sqrt(num1));
+                                questionText = `What is the square root of ${num1}? (Round down to the nearest integer)`;
+                            } else if (operation === 'area') {
+                                currentAnswer = num1 * num2;
+                                questionText = `What is the area of a rectangle with length ${num1} and width ${num2}?`;
+                            } else if (operation === 'perimeter') {
+                                currentAnswer = 2 * (num1 + num2);
+                                questionText = `What is the perimeter of a rectangle with length ${num1} and width ${num2}?`;
+                            } else if (operation === 'circle_area') {
+                                currentAnswer = Math.floor(Math.PI * num1 * num1);
+                                questionText = `What is the area of a circle with radius ${num1}? (Use π ≈ 3.14 and round down to the nearest integer)`;
+                            }
+
+                            document.getElementById('question').textContent = questionText;
+                            document.getElementById('result').textContent = '';
+                            document.getElementById('answer').value = '';
+                            startTimer();
+                        }
+
+                        function startTimer() {
+                            let timeLeft = timePerQuestion;
+                            document.getElementById('timer').textContent = `Time left: ${timeLeft}s`;
+
+                            timer = setInterval(() => {
+                                timeLeft--;
+                                document.getElementById('timer').textContent = `Time left: ${timeLeft}s`;
+                                if (timeLeft <= 0) {
+                                    clearInterval(timer);
+                                    checkAnswer(false);
+                                }
+                            }, 1000);
+                        }
+
+                        function checkAnswer(isSubmitted = true) {
+                            clearInterval(timer);
+
+                            const userAnswer = parseInt(document.getElementById('answer').value, 10);
+                            if (isSubmitted && userAnswer === currentAnswer) {
+                                score++;
+                                document.getElementById('result').textContent = 'Correct!';
+                            } else {
+                                document.getElementById('result').textContent = 'Time\'s up or wrong answer!';
+                            }
+                            setTimeout(generateQuestion, 1000);
+                        }
+
+                        function endGame() {
+                            if (score >= totalQuestions / 2) {
+                                document.getElementById('result').textContent = `Congratulations! You passed with a score of ${score}/${totalQuestions}`;
+                            } else {
+                                document.getElementById('result').textContent = `Sorry, you fail. Your score is ${score}/${totalQuestions}`;
+                            }
+                            document.getElementById('question').textContent = '';
+                            document.getElementById('timer').textContent = '';
+                        }
+
+                        function joinClass() {
+                            const link = prompt("Please paste the class link:");
+                            if (link) {
+                                window.location.href = link;
+                            }
+                        }
+                    </script>
+                </body>
+
+                </html>
+            </div>
+
+        </div>
+        <div id="comment" class="page">
+            <div>
+                <!DOCTYPE html>
+                <html lang="ar">
+
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>نظام تقييم بالنجوم</title>
+                    <style>
+                        .rating {
+                            display: flex;
+                            direction: rtl;
+                            justify-content: center;
+                        }
+
+                        .rating input {
+                            display: none;
+                        }
+
+                        .rating label {
+                            font-size: 2em;
+                            color: #ddd;
+                            cursor: pointer;
+                        }
+
+                        .rating input:checked~label,
+                        .rating input:hover~label,
+                        .rating label:hover~label {
+                            color: gold;
+                        }
+
+                        .rating input:checked+label:hover,
+                        .rating input:hover~input:checked~label {
+                            color: darkorange;
+                        }
+                    </style>
+                </head>
+
+                <body>
+                    <div class="rating">
+                        <input type="radio" id="star5" name="rating" value="5" />
+                        <label for="star5" title="5 نجوم">★</label>
+                        <input type="radio" id="star4" name="rating" value="4" />
+                        <label for="star4" title="4 نجوم">★</label>
+                        <input type="radio" id="star3" name="rating" value="3" />
+                        <label for="star3" title="3 نجوم">★</label>
+                        <input type="radio" id="star2" name="rating" value="2" />
+                        <label for="star2" title="2 نجوم">★</label>
+                        <input type="radio" id="star1" name="rating" value="1" />
+                        <label for="star1" title="نجمة واحدة">★</label>
+                    </div>
+                </body>
+
+                </html>
+            </div>
+            <!DOCTYPE html>
+            <html lang="ar">
+
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>صفحة تعليقات</title>
+                <style>
+                    .container {
+                        width: 80%;
+                        max-width: 600px;
+                        background-color: #fff;
+                        padding: 20px;
+                        border-radius: 8px;
+                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                    }
+
+                    h3 {
+                        margin-top: 0;
+                    }
+
+                    #commentButton,
+                    #shareButton {
+                        background-color: #007BFF;
+                        color: #fff;
+                        border: none;
+                        padding: 10px 20px;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        font-size: 16px;
+                    }
+
+                    #commentButton {
+                        display: block;
+                        margin: 0 auto 20px;
+                        width: 100%;
+                        max-width: 150px;
+                    }
+
+                    #shareButton {
+                        margin-top: 10px;
+                    }
+
+                    .comment-section {
+                        display: none;
+                        margin-top: 20px;
+                    }
+
+                    textarea {
+                        width: 100%;
+                        padding: 10px;
+                        border-radius: 5px;
+                        border: 1px solid #ccc;
+                        font-size: 14px;
+                        resize: none;
+                    }
+
+                    .comment-list {
+                        margin-top: 20px;
+                    }
+
+                    .comment-list ul {
+                        list-style-type: none;
+                        padding: 0;
+                    }
+
+                    .comment-list li {
+                        background-color: #f8f9fa;
+                        padding: 10px;
+                        margin-bottom: 10px;
+                        border-radius: 5px;
+                        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+                        position: relative;
+                    }
+
+                    .delete-button {
+                        position: absolute;
+                        right: 10px;
+                        top: 10px;
+                        background-color: #dc3545;
+                        color: #fff;
+                        border: none;
+                        padding: 5px 10px;
+                        border-radius: 5px;
+                        cursor: pointer;
+                    }
+
+                    .delete-button:hover {
+                        background-color: #c82333;
+                    }
+                </style>
+            </head>
+
+            <body>
+                <div class="container">
+                    <button id="commentButton">Comment</button>
+
+                    <div class="comment-section" id="commentSection">
+                        <h3>اترك تعليق</h3>
+                        <textarea id="commentText" rows="4" placeholder="اكتب تعليقك هنا..."></textarea><br>
+                        <button id="shareButton">Share</button>
+                    </div>
+
+                    <div class="comment-list" id="commentList">
+                        <h3>التعليقات:</h3>
+                        <ul id="comments">بجد صفحة روعة ❤👌<br> صفحة بتوفر كل حاجة الطالب محتاجها❤👌💕🎁<br>Very high
+                            and good quality math page</ul>
+                    </div>
+                </div>
+
+                <script>
+                    document.addEventListener('DOMContentLoaded', () => {
+                        const commentSection = document.getElementById('commentSection');
+                        const commentsList = document.getElementById('comments');
+                        const commentButton = document.getElementById('commentButton');
+                        const shareButton = document.getElementById('shareButton');
+                        const commentText = document.getElementById('commentText');
+
+                        // Load comments from local storage
+                        function loadComments() {
+                            const savedComments = JSON.parse(localStorage.getItem('comments')) || [];
+                            savedComments.forEach(comment => {
+                                addCommentToDOM(comment);
+                            });
+                        }
+
+                        // Save comments to local storage
+                        function saveComments() {
+                            const comments = [];
+                            commentsList.querySelectorAll('li').forEach(li => {
+                                comments.push(li.textContent.replace('حذف', '').trim());
+                            });
+                            localStorage.setItem('comments', JSON.stringify(comments));
+                        }
+
+                        // Add a comment to the DOM
+                        function addCommentToDOM(commentText) {
+                            const newComment = document.createElement('li');
+                            newComment.textContent = commentText;
+
+                            // Add delete button
+                            const deleteButton = document.createElement('button');
+                            deleteButton.textContent = 'حذف';
+                            deleteButton.className = 'delete-button';
+                            deleteButton.onclick = function () {
+                                commentsList.removeChild(newComment);
+                                saveComments(); // Save comments after deleting
+                                alert('تم حذف تعليقك'); // Show alert message after deletion
+                            };
+
+                            newComment.appendChild(deleteButton);
+                            commentsList.appendChild(newComment);
+                        }
+
+                        commentButton.onclick = function () {
+                            commentSection.style.display = 'block';
+                        };
+
+                        shareButton.onclick = function () {
+                            const text = commentText.value.trim();
+                            if (text !== "") {
+                                addCommentToDOM(text);
+                                commentText.value = ''; // Clear the textarea
+                                commentSection.style.display = 'none'; // Hide the comment section
+                                saveComments(); // Save comments after adding
+                                alert('تم إرسال تعليقك'); // Show alert message after adding
+                            }
+                        };
+
+                        // Load comments when the page is loaded
+                        loadComments();
+                    });
+                </script>
+            </body>
+
+            </html>
+
+
+
+
+        </div>
+        </div>
+        <div id="اشترك" class="page">
+            <h2>اشترك:<br> ابتدائى = <br> اعدادي = </h2>
+            <a href="https://web.vodafone.com.eg/ar/vodafone-cash" class="get-started-btn">ابدأ الآن</a>
+            <h3> ازاي تحول فلوس بڤودافون كاش لأي حد في مصر حتى لو مش مشترك في الخدمة:
+                كلم #7*9*،إختار خدمة تحويل الأموال، ادخل رقم الهاتف المراد التحويل له، ادخل القيمة المراد تحويلها من 5
+                إلى 60,000 جنيه، ادخل الرقم السري</h3>
+
+            <h4>mobile phone : 01092201077</h4>
+        </div>
+        <div id="ذاكر معانا" class="page">
+            <h2>study with us</h2>
+
+            <canvas id="drawingCanvas"></canvas>
+            <h4>TO DO LIST</h4><Br>
+            هل اتممت الواجب المنزلي <input type="checkbox"><br>
+            هل ذاكرت دروسك:<input type="checkbox">
+            <section id="dhaker-maana">
+                <!DOCTYPE html>
+                <html lang="ar">
+
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>جدول قابل للتعديل</title>
+                    <style>
+                        table {
+                            width: 100%;
+                            border-collapse: collapse;
+                        }
+
+                        th,
+                        td {
+                            border: 1px solid #ddd;
+                            padding: 8px;
+                            text-align: center;
+                        }
+
+                        th {
+                            background-color: #f2f2f2;
+                        }
+
+                        .editable {
+                            cursor: pointer;
+                        }
+                    </style>
+
+                    <!DOCTYPE html>
+                    <html lang="ar">
+
+                    <head>
+                        <meta charset="UTF-8">
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        <title>جدول قابل للتعديل</title>
+                        <style>
+                            table {
+                                width: 100%;
+                                border-collapse: collapse;
+                            }
+
+                            th,
+                            td {
+                                border: 1px solid #ddd;
+                                padding: 8px;
+                                text-align: center;
+                            }
+
+                            th {
+                                background-color: #f2f2f2;
+                            }
+
+                            .editable {
+                                cursor: pointer;
+                            }
+
+                            #save-button {
+                                margin-top: 10px;
+                                padding: 10px 20px;
+                                background-color: #4CAF50;
+                                color: white;
+                                border: none;
+                                border-radius: 5px;
+                                cursor: pointer;
+                            }
+
+                            #save-button:hover {
+                                background-color: #45a049;
+                            }
+                        </style>
+                    </head>
+
+                <body>
+                    <section id="dhaker-maana">
+                        <h2>تابع مستواك</h2>
+                        <table id="editable-table">
+                            <thead>
+                                <tr>
+                                    <th>lesson</th>
+                                    <th>level</th>
+                                    <th>exam</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="editable"></td>
+                                    <td class="editable"></td>
+                                    <td class="editable">Yes<input type="radio"><br>NO <input type="radio"></td>
+
+                                </tr>
+                                <tr>
+                                    <td class="editable"></td>
+                                    <td class="editable"></td>
+                                    <td class="editable"></td>
+                                    <td class="editable"></td>
+                                </tr>
+                                <tr>
+                                    <td class="editable"></td>
+                                    <td class="editable"></td>
+                                    <td class="editable"></td>
+                                    <td class="editable"></td>
+                                </tr>
+                                <tr>
+                                    <td class="editable"></td>
+                                    <td class="editable"></td>
+                                    <td class="editable"></td>
+                                    <td class="editable"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <button id="save-button">حفظ التعديلات</button>
+                    </section>
+
+                    <script>
+                        document.addEventListener('DOMContentLoaded', () => {
+                            const table = document.getElementById('editable-table');
+                            const saveButton = document.getElementById('save-button');
+                            let editedCells = [];
+
+                            table.addEventListener('click', (event) => {
+                                const target = event.target;
+                                if (target.classList.contains('editable')) {
+                                    const originalText = target.innerText;
+                                    const input = document.createElement('input');
+                                    input.type = 'text';
+                                    input.value = originalText;
+                                    input.style.width = '100%';
+
+                                    input.addEventListener('blur', () => {
+                                        if (input.value !== originalText) {
+                                            target.innerText = input.value;
+                                            editedCells.push({ cell: target, originalText: originalText, newText: input.value });
+                                        } else {
+                                            target.innerText = originalText;
+                                        }
+                                    });
+
+                                    target.innerHTML = '';
+                                    target.appendChild(input);
+                                    input.focus();
+                                }
+                            });
+
+                            saveButton.addEventListener('click', () => {
+                                // تنفيذ منطق الحفظ هنا
+                                console.log('تم حفظ التعديلات:');
+                                editedCells.forEach(edit => {
+                                    console.log(`تم تغيير النص من "${edit.originalText}" إلى "${edit.newText}"`);
+                                });
+                                editedCells = []; // مسح قائمة التعديلات بعد الحفظ
+                            });
+                        });
+                    </script>
+                </body>
+
+                </html>
+        </div>
+        <div id="كورسات" class="page">
+            <!DOCTYPE html>
+            <html lang="ar">
+
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>إضافة رابط</title>
+                <style>
+                    .delete-btn {
+                        margin-left: 10px;
+                        color: red;
+                        cursor: pointer;
+                    }
+                </style>
+            </head>
+
+            <body>
+                <h2>إضافة رابط جديد</h2>
+                <form id="linkForm">
+                    <label for="linkText">نص الرابط:</label>
+                    <input type="text" id="linkText" placeholder="ادخل نص الرابط" required>
+                    <br><br>
+                    <label for="linkURL">عنوان الرابط:</label>
+                    <input type="url" id="linkURL" placeholder="https://example.com" required>
+                    <br><br>
+                    <button type="submit">إضافة الرابط</button>
+                </form>
+
+                <h3>Our Courses </h3>
+                <ul id="linkList"></ul>
+
+                <script>
+                    // تحميل الروابط المحفوظة من Local Storage عند تحميل الصفحة
+                    document.addEventListener('DOMContentLoaded', function () {
+                        var savedLinks = JSON.parse(localStorage.getItem('links')) || [];
+                        savedLinks.forEach(function (link) {
+                            addLinkToList(link.text, link.url);
+                        });
+                    });
+
+                    // التعامل مع إرسال النموذج
+                    document.getElementById('linkForm').addEventListener('submit', function (event) {
+                        event.preventDefault();
+
+                        // الحصول على النص والعنوان من المستخدم
+                        var linkText = document.getElementById('linkText').value;
+                        var linkURL = document.getElementById('linkURL').value;
+
+                        // حفظ الرابط إلى Local Storage
+                        var savedLinks = JSON.parse(localStorage.getItem('links')) || [];
+                        savedLinks.push({ text: linkText, url: linkURL });
+                        localStorage.setItem('links', JSON.stringify(savedLinks));
+
+                        // إضافة الرابط إلى القائمة
+                        addLinkToList(linkText, linkURL);
+
+                        // إعادة تعيين النموذج
+                        document.getElementById('linkForm').reset();
+                    });
+
+                    // وظيفة لإضافة رابط إلى القائمة
+                    function addLinkToList(text, url) {
+                        var li = document.createElement('li');
+                        var a = document.createElement('a');
+                        a.href = url;
+                        a.textContent = text;
+                        a.target = "_blank"; // يفتح الرابط في نافذة جديدة
+
+                        // إنشاء زر الحذف
+                        var deleteBtn = document.createElement('span');
+                        deleteBtn.textContent = 'حذف';
+                        deleteBtn.className = 'delete-btn';
+                        deleteBtn.onclick = function () {
+                            removeLinkFromList(text, url, li);
+                        };
+
+                        li.appendChild(a);
+                        li.appendChild(deleteBtn);
+
+                        // إضافة العنصر <li> إلى القائمة
+                        document.getElementById('linkList').appendChild(li);
+                    }
+
+                    // وظيفة لحذف الرابط من القائمة
+                    function removeLinkFromList(text, url, listItem) {
+                        // حذف الرابط من الواجهة
+                        listItem.remove();
+
+                        // حذف الرابط من Local Storage
+                        var savedLinks = JSON.parse(localStorage.getItem('links')) || [];
+                        savedLinks = savedLinks.filter(function (link) {
+                            return !(link.text === text && link.url === url);
+                        });
+                        localStorage.setItem('links', JSON.stringify(savedLinks));
+                    }
+                </script>
+            </body>
+
+            </html>
+
+            <h2>Available courses</h2>
+            <h1>اشترك لكي تتوفر لك الكورسات</h1>
+            <div class="courses-grid">
+                <div class="course-category">
+
+                    <h3>liner algebra</h3>
+                    <ul>
+                        <li><a href="https://example.com/prep3-lesson1">Lesson 1</a></li>
+                        <li><a href="https://example.com/prep3-lesson2">Lesson 2</a></li>
+                        <li><a href="https://example.com/prep3-lesson3">Lesson 3</a></li>
+                    </ul>
+                </div>
+                <div class="course-category">
+                    <h3>Algebra</h3>
+                    <ul>
+                        <li><a href="https://example.com/prep2-lesson1">Lesson 1</a></li>
+                        <li><a href="https://example.com/prep2-lesson2">Lesson 2</a></li>
+                        <li><a href="https://example.com/prep2-lesson3">Lesson 3</a></li>
+                    </ul>
+                </div>
+                <div class="course-category">
+                    <h3>geometry</h3>
+                    <ul>
+                        <li><a href="https://example.com/prep1-lesson1">Lesson 1</a></li>
+                        <li><a href="https://example.com/prep1-lesson2">Lesson 2</a></li>
+                        <li><a href="https://example.com/prep1-lesson3">Lesson 3</a></li>
+                    </ul>
+                </div>
+                <div class="course-category">
+                    <h3>Graphical represintation</h3>
+                    <ul>
+                        <li><a href="https://example.com/grade6-lesson1">Lesson 1</a></li>
+                        <li><a href="https://example.com/grade6-lesson2">Lesson 2</a></li>
+                        <li><a href="https://example.com/grade6-lesson3">Lesson 3</a></li>
+                    </ul>
+                </div>
+                <div class="course-category">
+                    <h3>Trinomegal</h3>
+                    <ul>
+                        <li><a href="https://example.com/grade5-lesson1">Lesson 1</a></li>
+                        <li><a href="https://example.com/grade5-lesson2">Lesson 2</a></li>
+                        <li><a href="https://example.com/grade5-lesson3">Lesson 3</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+        <div id="about" class="page">
+            <h2>About Us</h2>
+            <p>Teaching for 7 years for preperatory stage and primary stage</p>
+        </div>
+
+        <div id="help" class="page">
+            <h2>Help</h2>
+            <p>If you need assistance, please contact our support team. <br> on 01092201077</p>
+        </div>
+
+        <div id="Math classes" class="page">
+            <style>
+                #right-image {
+                    position: fixed;
+                    top: 120px;
+                    /* Adjust vertical position */
+                    right: 10px;
+                    /* Adjust horizontal position */
+                    width: 100px;
+                    /* Adjust width as needed */
+                    height: 200px;
+                    /* Adjust height as needed */
+                    border-radius: 50%;
+                    /* Make the image circular */
+                    object-fit: cover;
+                    /* Ensure the image covers the circle */
+                    z-index: 5;
+
+                }
+            </style>
+            <img id="right-image"
+                src="https://media-hbe1-1.cdn.whatsapp.net/v/t61.24694-24/421911047_854777562772071_6897763654759999718_n.jpg?ccb=11-4&oh=01_Q5AaIB0gjmJNZoccMzrHMVihdLy_M0lvwHaB_IV7vXYrNKBR&oe=6708F384&_nc_sid=5e03e0&_nc_cat=104"
+                alt="Girl Image">
+            <!DOCTYPE html>
+            <html lang="ar">
+
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>إضافة روابط</title>
+                <style>
+                    .courses-grid {
+                        display: flex;
+                        flex-direction: column;
+                        margin: 20px;
+                    }
+
+                    .course-category {
+                        margin-bottom: 20px;
+                    }
+
+                    button {
+                        margin-left: 10px;
+                    }
+                </style>
+            </head>
+
+            <body>
+                <h2>Available lessons</h2>
+                <h1>اشترك علشان الدروس تتوفرلك</h1>
+                <!------------------------------------------------------------------------------------------------------------------------------------------------->
+                <div class="courses-grid">
+                    <!-- Prep 3 Section -->
+                    <div class="course-category" id="prep3-category">
+                        <h3>Prep 3</h3>
+                        <ul id="prep3-list">
+                            <!-- سيتم هنا تحميل الروابط المحفوظة -->
+                            <li><a href="https://www.youtube.com/watch?v=quzAMXbMNAo">first lesson</a></li>
+                            <li><a href="https://example.com/prep3-lesson2">Lesson 2</a></li>
+                            <li><a href="https://example.com/prep3-lesson3">Lesson 3</a></li>
+
+                        </ul>
+                        <h4>إضافة رابط جديد</h4>
+                        <p>أدخل عنوان الرابط (النص المراد عرضه) وURL:</p>
+                        <input type="text" id="prep3-linkText" placeholder="عنوان الرابط">
+                        <input type="text" id="prep3-linkURL" placeholder="URL الرابط">
+                        <button onclick="addLink('prep3')">إضافة رابط</button>
+                    </div>
+
+                    <!-- Prep 2 Section -->
+                    <div class="course-category" id="prep2-category">
+                        <h3>Prep 2</h3>
+                        <ul id="prep2-list">
+                            <!-- سيتم هنا تحميل الروابط المحفوظة -->
+                            <li><a href="https://example.com/prep3-lesson1">Lesson 1</a></li>
+                            <li><a href="https://example.com/prep3-lesson2">Lesson 2</a></li>
+                            <li><a href="https://example.com/prep3-lesson3">Lesson 3</a></li>
+
+                        </ul>
+                        <h4>إضافة رابط جديد</h4>
+                        <p>أدخل عنوان الرابط (النص المراد عرضه) وURL:</p>
+                        <input type="text" id="prep2-linkText" placeholder="عنوان الرابط">
+                        <input type="text" id="prep2-linkURL" placeholder="URL الرابط">
+                        <button onclick="addLink('prep2')">إضافة رابط</button>
+                    </div>
+
+                    <!-- Prep 1 Section -->
+                    <div class="course-category" id="prep1-category">
+                        <h3>Prep 1</h3>
+                        <ul id="prep1-list">
+                            <!-- سيتم هنا تحميل الروابط المحفوظة -->
+                            <li><a href="https://example.com/prep3-lesson1">Lesson 1</a></li>
+                            <li><a href="https://example.com/prep3-lesson2">Lesson 2</a></li>
+                            <li><a href="https://example.com/prep3-lesson3">Lesson 3</a></li>
+
+                        </ul>
+                        <h4>إضافة رابط جديد</h4>
+                        <p>أدخل عنوان الرابط (النص المراد عرضه) وURL:</p>
+                        <input type="text" id="prep1-linkText" placeholder="عنوان الرابط">
+                        <input type="text" id="prep1-linkURL" placeholder="URL الرابط">
+                        <button onclick="addLink('prep1')">إضافة رابط</button>
+                    </div>
+
+                    <!-- Grade 6 Section -->
+                    <div class="course-category" id="grade6-category">
+                        <h3>Grade 6</h3>
+                        <ul id="grade6-list">
+                            <!-- سيتم هنا تحميل الروابط المحفوظة -->
+                            <li><a href="https://example.com/prep3-lesson1">Lesson 1</a></li>
+                            <li><a href="https://example.com/prep3-lesson2">Lesson 2</a></li>
+                            <li><a href="https://example.com/prep3-lesson3">Lesson 3</a></li>
+
+                        </ul>
+                        <h4>إضافة رابط جديد</h4>
+                        <p>أدخل عنوان الرابط (النص المراد عرضه) وURL:</p>
+                        <input type="text" id="grade6-linkText" placeholder="عنوان الرابط">
+                        <input type="text" id="grade6-linkURL" placeholder="URL الرابط">
+                        <button onclick="addLink('grade6')">إضافة رابط</button>
+                    </div>
+
+                    <!-- Grade 5 Section -->
+                    <div class="course-category" id="grade5-category">
+                        <h3>Grade 5</h3>
+                        <ul id="grade5-list">
+                            <!-- سيتم هنا تحميل الروابط المحفوظة -->
+                            <li><a href="https://example.com/prep3-lesson1">Lesson 1</a></li>
+                            <li><a href="https://example.com/prep3-lesson2">Lesson 2</a></li>
+                            <li><a href="https://example.com/prep3-lesson3">Lesson 3</a></li>
+
+                        </ul>
+                        <h4>إضافة رابط جديد</h4>
+                        <p>أدخل عنوان الرابط (النص المراد عرضه) وURL:</p>
+                        <input type="text" id="grade5-linkText" placeholder="عنوان الرابط">
+                        <input type="text" id="grade5-linkURL" placeholder="URL الرابط">
+                        <button onclick="addLink('grade5')">إضافة رابط</button>
+                    </div>
+
+                    <!-- Grade 4 Section -->
+                    <div class="course-category" id="grade4-category">
+                        <h3>Grade 4</h3>
+                        <ul id="grade4-list">
+                            <!-- سيتم هنا تحميل الروابط المحفوظة -->
+
+                            <li><a href="https://example.com/prep3-lesson1">Lesson 1</a></li>
+                            <li><a href="https://example.com/prep3-lesson2">Lesson 2</a></li>
+                            <li><a href="https://example.com/prep3-lesson3">Lesson 3</a></li>
+
+                        </ul>
+                        <h4>إضافة رابط جديد</h4>
+                        <p>أدخل عنوان الرابط (النص المراد عرضه) وURL:</p>
+                        <input type="text" id="grade4-linkText" placeholder="عنوان الرابط">
+                        <input type="text" id="grade4-linkURL" placeholder="URL الرابط">
+                        <button onclick="addLink('grade4')">إضافة رابط</button>
+                    </div>
+
+                    <!-- Third Prep Section -->
+                    <div class="course-category" id="third-prep-category">
+                        <h3>ثالث اعدادي</h3>
+                        <ul id="third-prep-list">
+                            <!-- سيتم هنا تحميل الروابط المحفوظة -->
+
+                            <li><a href="https://example.com/prep3-lesson1">Lesson 1</a></li>
+                            <li><a href="https://example.com/prep3-lesson2">Lesson 2</a></li>
+                            <li><a href="https://example.com/prep3-lesson3">Lesson 3</a></li>
+
+                        </ul>
+                        <h4>إضافة رابط جديد</h4>
+                        <p>أدخل عنوان الرابط (النص المراد عرضه) وURL:</p>
+                        <input type="text" id="third-prep-linkText" placeholder="عنوان الرابط">
+                        <input type="text" id="third-prep-linkURL" placeholder="URL الرابط">
+                        <button onclick="addLink('third-prep')">إضافة رابط</button>
+                    </div>
+
+                    <!-- Second Prep Section -->
+                    <div class="course-category" id="second-prep-category">
+                        <h3>ثاني اعدادي</h3>
+                        <ul id="second-prep-list">
+                            <!-- سيتم هنا تحميل الروابط المحفوظة -->
+                            <li><a
+                                    href="https://docs.oracle.com/en/cloud/saas/warehouse-management/24b/owmld/python-strftime-directives.html"></a>
+                            </li>
+                            <li><a
+                                    href="https://docs.oracle.com/en/cloud/saas/warehouse-management/24b/owmld/python-strftime-directives.html">Lesson
+                                    2</a></li>
+                            <li><a href="https://example.com/prep3-lesson3">Lesson 3</a></li>
+                            <li><a href="https://example.com/prep3-lesson3">Lesson 3</a></li>
+
+                        </ul>
+                        <h4>إضافة رابط جديد</h4>
+                        <p>أدخل عنوان الرابط (النص المراد عرضه) وURL:</p>
+                        <input type="text" id="second-prep-linkText" placeholder="عنوان الرابط">
+                        <input type="text" id="second-prep-linkURL" placeholder="URL الرابط">
+                        <button onclick="addLink('second-prep')">إضافة رابط</button>
+                    </div>
+
+                    <!-- First Prep Section -->
+                    <div class="course-category" id="first-prep-category">
+                        <h3>اول اعدادي</h3>
+                        <ul id="first-prep-list">
+                            <!-- سيتم هنا تحميل الروابط المحفوظة -->
+                            <li><a href="https://example.com/prep3-lesson1">Lesson 1</a></li>
+                            <li><a href="https://example.com/prep3-lesson2">Lesson 2</a></li>
+                            <li><a href="https://example.com/prep3-lesson3">Lesson 3</a></li>
+
+                        </ul>
+                        <h4>إضافة رابط جديد</h4>
+                        <p>أدخل عنوان الرابط (النص المراد عرضه) وURL:</p>
+                        <input type="text" id="first-prep-linkText" placeholder="عنوان الرابط">
+                        <input type="text" id="first-prep-linkURL" placeholder="URL الرابط">
+                        <button onclick="addLink('first-prep')">إضافة رابط</button>
+                    </div>
+
+                    <!-- Sixth Primary Section -->
+                    <div class="course-category" id="sixth-primary-category">
+                        <h3>سادس ابتدائى</h3>
+                        <ul id="sixth-primary-list">
+                            <!-- سيتم هنا تحميل الروابط المحفوظة -->
+                            <li><a href="https://example.com/prep3-lesson1">Lesson 1</a></li>
+                            <li><a href="https://example.com/prep3-lesson2">Lesson 2</a></li>
+                            <li><a href="https://example.com/prep3-lesson3">Lesson 3</a></li>
+
+                        </ul>
+                        <h4>إضافة رابط جديد</h4>
+                        <p>أدخل عنوان الرابط (النص المراد عرضه) وURL:</p>
+                        <input type="text" id="sixth-primary-linkText" placeholder="عنوان الرابط">
+                        <input type="text" id="sixth-primary-linkURL" placeholder="URL الرابط">
+                        <button onclick="addLink('sixth-primary')">إضافة رابط</button>
+                    </div>
+
+                    <!-- Fifth Primary Section -->
+                    <div class="course-category" id="fifth-primary-category">
+                        <h3>خامس ابتدائى</h3>
+                        <ul id="fifth-primary-list">
+                            <!-- سيتم هنا تحميل الروابط المحفوظة -->
+                            <li><a href="https://example.com/prep3-lesson1">Lesson 1</a></li>
+                            <li><a href="https://example.com/prep3-lesson2">Lesson 2</a></li>
+                            <li><a href="https://example.com/prep3-lesson3">Lesson 3</a></li>
+
+                        </ul>
+                        <h4>إضافة رابط جديد</h4>
+                        <p>أدخل عنوان الرابط (النص المراد عرضه) وURL:</p>
+                        <input type="text" id="fifth-primary-linkText" placeholder="عنوان الرابط">
+                        <input type="text" id="fifth-primary-linkURL" placeholder="URL الرابط">
+                        <button onclick="addLink('fifth-primary')">إضافة رابط</button>
+                    </div>
+
+                    <!-- Fourth Primary Section -->
+                    <div class="course-category" id="fourth-primary-category">
+                        <h3>رابع ابتدائى</h3>
+                        <ul id="fourth-primary-list">
+                            <!-- سيتم هنا تحميل الروابط المحفوظة -->
+                            <li><a href="https://example.com/prep3-lesson1">Lesson 1</a></li>
+                            <li><a href="https://example.com/prep3-lesson2">Lesson 2</a></li>
+                            <li><a href="https://example.com/prep3-lesson3">Lesson 3</a></li>
+                            <!-------------------------------------------------------------------------------------------------------------------------------------------->
+                        </ul>
+                        <h4>إضافة رابط جديد</h4>
+                        <p>أدخل عنوان الرابط (النص المراد عرضه) وURL:</p>
+                        <input type="text" id="fourth-primary-linkText" placeholder="عنوان الرابط">
+                        <input type="text" id="fourth-primary-linkURL" placeholder="URL الرابط">
+                        <button onclick="addLink('fourth-primary')">إضافة رابط</button>
+                    </div>
+                </div>
+
+                <script>
+                    document.addEventListener('DOMContentLoaded', () => {
+                        const categories = [
+                            'prep3', 'prep2', 'prep1',
+                            'grade6', 'grade5', 'grade4',
+                            'third-prep', 'second-prep', 'first-prep',
+                            'sixth-primary', 'fifth-primary', 'fourth-primary'
+                        ];
+
+                        categories.forEach(category => {
+                            loadLinks(category);
+                        });
+                    });
+
+                    function loadLinks(category) {
+                        const list = document.getElementById(`${category}-list`);
+                        const savedLinks = JSON.parse(localStorage.getItem(`${category}-links`)) || [];
+
+                        savedLinks.forEach((link, index) => {
+                            const li = document.createElement('li');
+                            const a = document.createElement('a');
+                            a.href = link.url;
+                            a.textContent = link.text;
+                            li.appendChild(a);
+
+                            const deleteButton = document.createElement('button');
+                            deleteButton.textContent = 'حذف';
+                            deleteButton.onclick = () => removeLink(category, index);
+                            li.appendChild(deleteButton);
+
+                            list.appendChild(li);
+                        });
+                    }
+
+                    function addLink(category) {
+                        const linkText = document.getElementById(`${category}-linkText`).value;
+                        const linkURL = document.getElementById(`${category}-linkURL`).value;
+                        const list = document.getElementById(`${category}-list`);
+
+                        if (linkText && linkURL) {
+                            const li = document.createElement('li');
+                            const a = document.createElement('a');
+                            a.href = linkURL;
+                            a.textContent = linkText;
+                            li.appendChild(a);
+
+                            const savedLinks = JSON.parse(localStorage.getItem(`${category}-links`)) || [];
+                            savedLinks.push({ text: linkText, url: linkURL });
+                            localStorage.setItem(`${category}-links`, JSON.stringify(savedLinks));
+
+                            const deleteButton = document.createElement('button');
+                            deleteButton.textContent = 'حذف';
+                            deleteButton.onclick = () => removeLink(category, savedLinks.length - 1);
+                            li.appendChild(deleteButton);
+
+                            list.appendChild(li);
+
+                            document.getElementById(`${category}-linkText`).value = '';
+                            document.getElementById(`${category}-linkURL`).value = '';
+                        } else {
+                            alert('يرجى إدخال نص الرابط و URL الرابط.');
+                        }
+                    }
+
+                    function removeLink(category, index) {
+                        const savedLinks = JSON.parse(localStorage.getItem(`${category}-links`)) || [];
+                        savedLinks.splice(index, 1);
+                        localStorage.setItem(`${category}-links`, JSON.stringify(savedLinks));
+
+                        const list = document.getElementById(`${category}-list`);
+                        list.innerHTML = '';
+                        loadLinks(category);
+                    }
+                </script>
+            </body>
+
+            </html>
+
+
+
+            <div id="رياضيات" class="page">
+
+
+                <h2>انتقل الي Math classes عشان تلاقي دروسك👌👍</h2>
+                <div class="courses-grid">
+                    <div class="course-category">
+
+                        <h3>الثالث الاعدادي</h3>
+                        <ul>
+                            <li><a href="https://example.com/prep3-lesson1">Lesson 1</a></li>
+                            <li><a href="https://example.com/prep3-lesson2">Lesson 2</a></li>
+                            <li><a href="https://example.com/prep3-lesson3">Lesson 3</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="course-category">
+                        <h3>الثاني الاعدادي</h3>
+
+                        <li><a href="https://example.com/prep2-lesson1">Lesson 1</a></li>
+                        <li><a href="https://example.com/prep2-lesson2">Lesson 2</a></li>
+                        <li><a href="https://example.com/prep2-lesson3">Lesson 3</a></li>
+
+                    </div>
+                    <div class="course-category">
+                        <h3>الاول الاعدادي</h3>
+                        <ul>
+                            <li><a href="https://example.com/prep1-lesson1">Lesson 1</a></li>
+                            <li><a href="https://example.com/prep1-lesson2">Lesson 2</a></li>
+                            <li><a href="https://example.com/prep1-lesson3">Lesson 3</a></li>
+                        </ul>
+                    </div>
+                    <div class="course-category">
+                        <h3>السادس الابتدائي</h3>
+                        <ul>
+                            <li><a href="https://example.com/grade6-lesson1">Lesson 1</a></li>
+                            <li><a href="https://example.com/grade6-lesson2">Lesson 2</a></li>
+                            <li><a href="https://example.com/grade6-lesson3">Lesson 3</a></li>
+                        </ul>
+                    </div>
+                    <div class="course-category">
+                        <h3>الخامس الابتدائي</h3>
+                        <ul>
+                            <li><a href="https://www.youtube.com/watch?v=Xx0U17Mk58w"></a></li>
+                            <li><a href="https://example.com/grade5-lesson2">Lesson 2</a></li>
+                            <li><a href="https://example.com/grade5-lesson3">Lesson 3</a></li>
+                        </ul>
+                    </div>
+                    <div class="course-category">
+                        <h3>الرابع الابتدائي</h3>
+                        <ul>
+                            <li><a href="https://example.com/grade4-lesson1">Lesson 1</a></li>
+                            <li><a href="https://example.com/grade4-lesson2">Lesson 2</a></li>
+                            <li><a href="https://example.com/grade4-lesson3">Lesson 3</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div id="registration" class="page">
+            <div class="registration-form">
+                <h2>تسجيل حساب</h2>
+                <form id="register-form">
+                    <div class="form-group">
+                        <label for="username">اسم المستخدم:</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">البريد الإلكتروني:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">كلمة المرور:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="profile-picture" class="custom-file-upload">اختيار صورة</label>
+                        <input type="file" id="profile-picture" name="profile-picture" accept="image/*">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">تسجيل</button>
+                    </div>
+                    <div class="message" id="registration-message"></div>
+                </form>
+                <button id="logout-btn" class="logout-btn" style="display:none;">Logout</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>© 2024 Math Learning Platform. All rights reserved.</p>
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20230728170204/Algebra.webp"
+                alt="Shield Icon Left" style="width: 50px; height: 50px; transform: rotate(-45deg);">
+            <div>
+                <button onclick="showPage('content')">Content</button>
+                <button onclick="showPage('about')">About</button>
+                <button onclick="showPage('help')">Help</button>
+            </div>
+            <img src="data:image/jpeg;base64,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"
+                alt="Shield Icon Right" style="width: 50px; height: 50px; transform: rotate(45deg);">
+        </div>
+        <style>
+            #main-content {
+                padding: 20px;
+                margin-top: 60px;
+                flex: 1;
+                overflow: auto;
+                display: flex;
+                flex-direction: column;
+            }
+
+            button {
+                background-color: #f17a0b;
+            }
+
+
+            button {
+                background-color: #6ed8bd;
+                color: #000000;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 16px;
+            }
+
+
+
+            footer {
+                padding: 20px;
+                background-color: #00a2ff;
+                text-align: center;
+            }
+
+            img {
+                vertical-align: middle;
+            }
+        </style>
+    </footer>
+
+    <script>
+        const canvas = document.getElementById('drawingCanvas');
+        const ctx = canvas.getContext('2d');
+
+        canvas.width = canvas.offsetWidth;
+        canvas.height = canvas.offsetHeight;
+
+        let isDrawing = false;
+
+        canvas.addEventListener('mousedown', startDrawing);
+        canvas.addEventListener('mousemove', draw);
+        canvas.addEventListener('mouseup', stopDrawing);
+
+        function startDrawing(e) {
+            isDrawing = true;
+            ctx.beginPath();
+            ctx.moveTo(e.clientX - canvas.offsetLeft, e.clientY - canvas.offsetTop);
+        }
+
+        function draw(e) {
+            if (!isDrawing) return;
+            ctx.lineTo(e.clientX - canvas.offsetLeft, e.clientY - canvas.offsetTop);
+            ctx.stroke();
+        }
+
+        function stopDrawing() {
+            isDrawing = false;
+            ctx.closePath();
+        }
+
+        function showPage(pageId) {
+            const pages = document.querySelectorAll('.page');
+            pages.forEach(page => {
+                page.style.display = 'none';
+            });
+            document.getElementById(pageId).style.display = 'block';
+        }
+
+        document.getElementById('register-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const username = document.getElementById('username').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const profilePicture = document.getElementById('profile-picture').files[0];
+
+            if (username && email && password) {
+                const user = { username, email, password };
+
+                if (profilePicture) {
+                    user.profilePicture = URL.createObjectURL(profilePicture);
+                }
+
+                localStorage.setItem('user', JSON.stringify(user));
+
+                document.getElementById('registration-message').textContent = 'تم تسجيل الحساب بنجاح!';
+                document.getElementById('registration-message').style.color = 'green';
+                document.getElementById('register-form').reset();
+
+                if (profilePicture) {
+                    document.getElementById('profile-img').src = user.profilePicture;
+                    document.getElementById('profile-img').style.display = 'block';
+                }
+
+                document.getElementById('logout-btn').style.display = 'block';
+                document.querySelector('.header-left img').style.display = 'block';
+                document.getElementById('profile-username').textContent = username;
+                document.getElementById('profile-email').textContent = email;
+                showPage('home');
+            }
+        });
+
+        document.getElementById('logout-btn').addEventListener('click', function () {
+            localStorage.removeItem('user');
+            document.getElementById('profile-img').style.display = 'none';
+            document.getElementById('logout-btn').style.display = 'none';
+            showPage('home');
+        });
+
+        document.getElementById('profile-img').addEventListener('click', function () {
+            const popup = document.getElementById('profile-info');
+            popup.style.display = popup.style.display === 'block' ? 'none' : 'block';
+        });
+
+        function hideProfileInfo() {
+            document.getElementById('profile-info').style.display = 'none';
+        }
+
+        // Initialize
+        const user = JSON.parse(localStorage.getItem('user'));
+        if (user) {
+            document.getElementById('profile-img').src = user.profilePicture || '';
+            document.getElementById('profile-img').style.display = 'block';
+            document.getElementById('profile-username').textContent = user.username;
+            document.getElementById('profile-email').textContent = user.email;
+            document.getElementById('logout-btn').style.display = 'block';
+            showPage('home');
+        } else {
+            document.getElementById('profile-img').style.display = 'none';
+        }
+
+        // Show the home page by default
+        showPage('home');
+        // Function to format date as dd/mm/yyyy
+        function formatDate(date) {
+            const day = String(date.getDate()).padStart(2, '0');
+            const month = String(date.getMonth() + 1).padStart(2, '0');
+            const year = date.getFullYear();
+            return `${day}/${month}/${year}`;
+        }
+
+        // Display the current date in the footer
+        document.getElementById('current-date').textContent = `Today's Date: ${formatDate(new Date())}`;
+        document.getElementById('share-btn').addEventListener('click', function () {
+            const commentText = document.getElementById('comment-text').value;
+
+            if (commentText) {
+                const commentsList = document.getElementById('comments-list');
+                const newComment = document.createElement('p');
+                newComment.textContent = commentText;
+                commentsList.appendChild(newComment);
+
+                // Clear the textarea
+                document.getElementById('comment-text').value = '';
+            }
+        });
+        function showPage(pageId) {
+            document.querySelectorAll('.page').forEach(page => {
+                page.style.display = page.id === pageId ? 'block' : 'none';
+            });
+        }
+
+        document.getElementById('registration-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+            document.getElementById('registration-message').innerText = 'Registration successful!';
+        });
+
+        document.getElementById('share-btn').addEventListener('click', function () {
+            const commentText = document.getElementById('comment-text').value.trim();
+
+            if (commentText) {
+                const commentsList = document.getElementById('comments-list');
+                const newComment = document.createElement('div');
+                newComment.className = 'comment-item';
+                newComment.innerHTML = `<p>${commentText}</p>`;
+                commentsList.appendChild(newComment);
+                document.getElementById('comment-text').value = '';
+            } else {
+                alert('Please enter a comment.');
+            }
+        });
+    </script>
+    <div id="disqus_thread"></div>
+    <button id="disqus-toggle" onclick="toggleDisqus();">Open Comments</button>
+
+    <style>
+        #disqus_thread {
+            overflow-y: auto;
+            max-height: 300px;
+            /* adjust the height to your liking */
+        }
+    </style>
+
+    <script>
+        var disqus_config = function () {
+            this.page.url = 'https://motasem123cggfx.github.io/Com/';  // Replace with your page URL
+            this.page.identifier = 'PAGE_IDENTIFIER';  // Replace with a unique identifier for your page
+        };
+
+        var disqusLoaded = false;
+
+        function toggleDisqus() {
+            var button = document.getElementById('disqus-toggle');
+            if (disqusLoaded) {
+                // Close Disqus comments
+                document.getElementById('disqus_thread').innerHTML = '';
+                button.innerHTML = 'Study with Friends';
+                disqusLoaded = false;
+            } else {
+                // Load Disqus comments
+                (function () {
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://' + 'mywebsite' + '.disqus.com/embed.js';  // Replace with your Disqus shortname
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+                var closeButton = document.createElement('button');
+                closeButton.innerHTML = 'Close';
+                closeButton.onclick = function () {
+                    toggleDisqus();
+                };
+                document.getElementById('disqus_thread').appendChild(closeButton);
+                button.innerHTML = 'Close chat';
+                disqusLoaded = true;
+            }
+        }
+    </script>
+    <script>
+        var startTime = new Date().getTime(); // get the current system time in milliseconds
+        var timeout = 120000; // 120000 milliseconds = 2 minutes
+
+        function checkTime() {
+            var currentTime = new Date().getTime();
+            var elapsedTime = currentTime - startTime;
+            if (elapsedTime >= timeout) {
+                window.close();
+            } else {
+                setTimeout(checkTime, 1000); // check every 1 second
+            }
+        }
+
+        checkTime(); // start the timer
+    </script>
+
+    <button onclick="showPage('Policy')">Policy</button>
+
+    <div id="Policy" class="page">
+        <h2>Privcy Policy</h2>
+        <p>Introduction
+
+            At Math Website, we value your privacy and are committed to protecting your personal information. This
+            Privacy
+            <br>
+            Policy explains how we collect, use, and share information provided through our website. <br>
+
+            1. Information We Collect <br>
+
+            We collect the following information: <br>
+
+            Personal Information: Such as your name, email address, and contact details when you register or communicate
+            <br>
+            with us.
+            Technical Information: Such as your IP address, browser type, operating system, and cookies to enhance user
+            <br>
+            experience and analyze website usage. <br>
+            Usage Information: Such as the pages you visit and your interactions with the content. <br>
+            2. How We Use Your Information <br>
+
+            We use the information we collect for the following purposes: <br>
+
+            Improving the Website: To analyze user behavior and enhance content and user experience. <br>
+            Communication: To respond to your inquiries and provide you with information or updates you have requested.
+            <br>
+            Security: To ensure the security of the website and protect against unauthorized access. <br>
+            3. Sharing Your Information <br>
+
+            We do not share your personal information with third parties except in the following cases: <br>
+
+            Service Providers: We may share information with trusted third-party service providers who assist us in <br>
+            operating the website and providing services, under strict confidentiality agreements. <br>
+            Legal Requirements: If required by law or to protect the rights, property, or safety of our website or
+            users.
+            <br>
+            4. Cookies <br>
+
+            Our website uses cookies to enhance your experience. Cookies are small files stored on your device that help
+            us
+            <br>
+            understand how you use our site and improve functionality. You can choose to disable cookies through your
+            <br>
+            browser settings. <br>
+
+            5. Your Rights <br>
+
+            You have the right to: <br>
+
+            Access: Request access to the personal information we hold about you. <br>
+            Correction: Request correction of any inaccurate or incomplete information. <br>
+            Deletion: Request deletion of your personal information, subject to legal obligations. <br>
+            6. Changes to This Policy <br>
+
+            We may update this Privacy Policy from time to time. Any changes will be posted on this page, and your
+            continued
+            <br>
+            use of the website constitutes acceptance of the updated policy. <br>
+
+            7. Contact Us <br>
+
+            If you have any questions or concerns about this Privacy Policy or our data practices, please contact us at:
+            <br>
+
+            Email: [your-email@example.com]
+
+        </p>
+    </div>
+    <div>
+        <style></style>
+    </div>
+</body>
+
+</html>
